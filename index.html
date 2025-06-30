@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Visual Storm – Aurelio Caminati</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Menu -->
+  <nav class="nav-menu">
+    <button class="hamburger-btn" id="hamburgerBtn">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+    <ul class="nav-list" id="navList">
+      <li><a href="#hero" data-section="hero">Home</a></li>
+      <li><a href="#trailer" data-section="trailer">Trailer</a></li>
+      <li><a href="#about" data-section="about">About</a></li>
+      <li><a href="#artwork" data-section="artwork">Artwork</a></li>
+      <li><a href="#artist" data-section="artist">Artist</a></li>
+      <li><a href="#director" data-section="director">Director</a></li>
+      <li><a href="#contact" data-section="contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero" id="hero">
+    <h1 class="fade-in">A Visual Storm</h1>
+    <p class="fade-in">Documentary film about the life and work<br> avantgarde artist <strong>Aurelio Caminati</strong>.</p>
+    <img src="artwork1.png" alt="" class="main-img" loading="lazy" class="fade-in">
+  </header>
+
+
+  <!-- Trailer -->
+  <section id="trailer" class="section-dark">
+    <h2 class="fade-in">Premiere on 12th July Pálás Cinema 5.45pm, Galway Ireland </h2>
+    <div class="video-container">
+      <video class="fade-in custom-video" width="100%" height="auto" poster="trailer-poster.jpg">
+        <source src="/trailer.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+      <div class="big-play-button" id="bigPlayButton">
+        <span class="big-play-icon">▶</span>
+      </div>
+      <div class="custom-controls">
+        <button class="play-pause-btn" id="playPauseBtn">
+          <span class="play-icon">▶</span>
+          <span class="pause-icon" style="display: none;">⏸</span>
+        </button>
+        <div class="progress-container">
+          <div class="progress-bar" id="progressBar">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+        </div>
+        <div class="time-display">
+          <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+        </div>
+        <button class="volume-btn" id="volumeBtn">🔊</button>
+        <button class="fullscreen-btn" id="fullscreenBtn">⛶</button>
+      </div>
+    </div>
+    <div class="ticket-button-container fade-in-delay">
+      <a href="https://tht.ticketsolve.com/share/1173661302" target="_blank" class="buy-ticket-btn">🎬 BUY TICKETS 🎬</a>
+    </div>
+  </section>
+
+
+
+  <!-- About the Film -->
+  <section id="about" class="section-light">
+    <h2 class="fade-in">About the Film</h2>
+    <p class="fade-in">
+      A portrait of avant-garde Italian master artist Aurelio Caminati (1922–2008), whose
+      prophetic vision &amp; storm force nature spanned six turbulent post war decades.
+    </p>
+    <p class="fade-in">
+      The film features Aurelio’s journey to Ireland where he forged a deep connection with
+      local people and landscape. Set against baroque intensity of Ireland’s wild Atlantic
+      coastline, the film interweaves raw, untamed power of nature with this resistance
+      master’s compulsion to create.
+    </p>
+    <p class="fade-in">
+      The film captures Aurelio’s provocative vision, capturing storms, solitude and creative
+      spark that emerges from nature’s fury &amp; artist’s realization of nature as ultimate power source.
+    </p>
+  </section>
+
+  <!-- Trailer -->
+
+  <!-- Featuring Artwork -->
+  <section id="artwork" class="section-dark">
+    <h2>Featuring Artwork</h2>
+    <p>A curated selection of Caminati’s provocative art work and performances, each piece immersed with human emotion, storms,  clouds, wind & water.</p>
+    <div class="gallery">
+      <img src="artwork9.png" alt="Artwork 1" loading="lazy" class="fade-in-delay">
+      <img src="artwork3.png" alt="Artwork 2" loading="lazy" class="fade-in-delay">
+      <img src="artwork5.jpeg" alt="Artwork 5" loading="lazy" class="fade-in-delay">
+      <img src="Berta.jpg" alt="Artwork 7" loading="lazy" class="fade-in-delay">
+      <img src="Deck chair.jpg" alt="Artwork 9" loading="lazy" class="fade-in-delay">
+      <img src="Santa Ana.jpg" alt="Artwork 5" loading="lazy" class="fade-in-delay" style="object-position: top;">
+    </div>
+  </section>
+
+    <!-- Artist at work -->
+  <section id="artist" class="section-light">
+    <h2 class="fade-in">Artist In Action</h2>
+    <div class="gallery">
+      <img src="artwork7.png" alt="Artwork 4" loading="lazy" class="fade-in-delay">
+      <img src="artwork4.jpeg" alt="Artwork 6" loading="lazy" class="fade-in-delay">
+      <img src="artwork6.jpeg" alt="" loading="lazy" class="fade-in-delay">
+    </div>
+  </section>
+
+  <!-- Director & Contact -->
+  <section class="section-dark" id="director">
+    <h2 class="fade-in">Director</h2>
+    <div class="director">
+      <div class="info">
+        <p class="fade-in">
+          <strong>Sinéad Walsh</strong> Walsh tells bold, visually rich stories. A graduate of Trinity College Dublin, Art
+          History &amp; English with Film, Sinéad first made waves with award-winning visual poem, The Pot Plant.
+        </p>
+        <p class="fade-in">
+          She later earned an MA in Digital Media Management from INA, Paris (2002). Sinéad’s
+          work includes community films for children and persons with disabilities.
+        </p>
+        <p class="fade-in">
+          A Visual Storm emerged from need to bring the work of avant garde artist Aurelio Caminati into the mainstream.
+        </p>
+      </div>
+      <img src="Sinead.png" alt="Photo of Sinéad Walsh" loading="lazy" class="director-photo" class="fade-in">
+    </div>
+  </section>
+
+  <section class="section-light dark fade-in" style="background-color: #1a1a1a; color: #FFFDF4">
+  <p class="thanks">Special thanks to Caminati Estate and the University of Genoa for granting permission to use original photographed 
+    artwork by artist Aurelio Caminati from their archives for the creation and promotion of the film.
+  </p>
+</section>
+
+<section class="section-dark directed" id="contact">
+  <div class="contact-us">
+      <h2 class="fade-in">Contact Us</h2>
+  </div>
+  <div class="contacts">
+    <!-- <img src="Sinead.png" alt="Photo of Sinéad Walsh" loading="lazy" class="director-photo"> -->
+    <!-- <div class="info"> -->
+      <p class="fade-in"><strong>Outcam Pictures Ltd</strong></p>
+      <p class="fade-in">Email: <a href="mailto:swalshout@gmail.com">info@outcam.com</a></p>
+      <p class="fade-in">Phone: <a href="tel:+353851423778">+353 85 142 37 78</a></p>
+      <p class="fade-in">Facebook: <a href="https://www.facebook.com/share/1AehphpK1w/" target="_blank">A Visual Storm</a></p>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer style="background-color: #1a1a1a; color: #FFFDF4">
+    © 2025 Outcam Digital Ltd. All rights reserved. Site made by Mykhailo Kosach.
+  </footer>
+</body>
+</html>
